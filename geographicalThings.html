@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>RobvanEde.nl</title>
+		<!--[if lt IE 9]>
+			<script src="html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+		<script src="countriesVisited.geoJSON" type="text/javascript"></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>RobvanEde.nl</h1>
+				<p class="center">Though we travel the world over to find the beautiful, we must carry it with us or we find it not -R.W. Emerson</p>
+			</hgroup>
+			<p><img id="Header1" src="img/Header1.jpg" alt="Header" width="20%">
+			<img id="Header2" src="img/Header2.jpg" alt="Header" width="20%">
+			<img id="Header3" src="img/Header3.jpg" alt="Header" width="20%">
+			<img id="Header4" src="img/Header4.jpg" alt="Header" width="20%"></p>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="aboutMe.html">about me</a></li>
+				<li><a href="physicalThings.html">physical things</a></li>
+				<li class="active"><a href="geographicalThings.html">geographical things</a></li>
+				<li><a href="energyThings.html">energy things</a></li>
+				<li><a href="videos.html">videos</a></li>
+				<li><a href="travel.html">travel</a></li>
+			</ul>
+		</nav>
+
+		
+		<article class="photo">
+			<p class="left">
+				As a MSc in Physical Geography who strayed into Geo-IT and later spatial data analysis/harmonization and logical/semantic modeling, I have been involved in many (geo)data projects all over the world.<br>
+				Some examples of the projects I am most fond of are linked below. Click on the logos for a preview and links to the official project websites (where available), or on the colored countries on the map that I had the pleasure to walk around in for photographic proof...
+			</p>		
+			<div id='map' class="clear">
+				<script src="map.js"></script>
+			</div>
+			<p class="center">
+				<img src="PortfolioPictures/LogoHIKE.png" onclick="addLayer(layerHIKE, 55, 10, 4, 64, 15, 'HIKE European Fault Database: A harmonized spatial dataset with semantic links to relevant knowledge, that was built together with the participating European Geological Surveys.<br>My responsibilities included: Communication with surveys, data-analysis, harmonization, modeling, transformation and visualization<br><a href=https://geoera.eu/projects/hike10/ target=_blank rel=noopener noreferrer>Official project website here.</a>')"  onMouseOver="this.style.cursor='pointer'" border="5">
+
+				<img src="PortfolioPictures/LogoBRO.png" onclick="addLayer(layerBROCPT, 52.2, 5, 8, 53, 4.1, 'Geotechnical Cone Penetration Tests for the Dutch national data repository of subsurface data (BRO).<br>My responsibilities included: Communication with potential users, data analysis and logical data modeling.<br><a href=https://basisregistratieondergrond.nl/english/ target=_blank rel=noopener noreferrer>Official project website here.</a>')"  onMouseOver="this.style.cursor='pointer'" border="5">
+		
+				<img src="PortfolioPictures/LogoEMODnet.png" onclick="addLayer(layerCM, 57, 17, 4, 47, 35, 'Pan-European map of shoreline migration: Visualization of coastline stability based on satellite measurements.<br>My responsibilities included: Data analysis, cleaning and development of scale-dependent visualization of high-resolution point data.<br><a href=https://www.emodnet-geology.eu/data-products/coastal-behavior/ target=_blank rel=noopener noreferrer>Official project website here.</a>')"  onMouseOver="this.style.cursor='pointer'" border="5">
+						
+				<img src="PortfolioPictures/LogoODIP.png" onclick="addLayer(dummyLayer, 15, -115, 2, 60, -140, 'Ocean Data Interoperability Platform: A worldwide collaborative effort to improve the sharing of oceanographic scientific data.<br>My work included: Analysis and harmonization of Dutch borehole data and grain-size measurements to global standards, prototyping on the use of Sensor Observation Services (SOS) and extension of controlled vocabularies for oceanographic research.<br><a href=http://odip.org/ target=_blank rel=noopener noreferrer>Official project website here.</a>')"  onMouseOver="this.style.cursor='pointer'" border="5">
+				
+				<img src="PortfolioPictures/LogoJRC.png" onclick="addLayer(layerOneGeology, 55, 13, 4, 64, -2, 'My work included: Mapping of the TNO-Geological Survey of the Netherlands INSPIRE-datasets to the INSPIRE data model and acting as facilitator for the INSPIRE Energy Resources / Earth Science thematic cluster for Eurpean Commission Joint Research Center (JRC) to help others transforming their datasets.<br><a href=https://inspire.ec.europa.eu/ target=_blank rel=noopener noreferrer>Official INSPIRE website here.</a>')" onMouseOver="this.style.cursor='pointer'" border="5">
+				
+				<img src="PortfolioPictures/LogoSchiphol.png" onclick="addLayer(dummyLayer, 52.313, 4.767, 17, 52.3145, 4.7666, 'Schiphol FUSE project: Integration of all airport geodata from several CAD and GIS systems into one new (3D) GIS system.<br>My work included: Data analysis, logical and technical modeling, database model implementation and data migration.')" onMouseOver="this.style.cursor='pointer'" border="5">
+				
+				<img src="PortfolioPictures/LogoProrail.png" onclick="addLayer(dummyLayer, 52.096, 5.105, 17, 52.097, 5.107, 'Objectgerichte BasisBeheerkaart: Tracks and objects around them relevant to the railroad were mapped and managed in different CAD and GIS systems.<br>My work included: Data migration between formats and systems and software development to streamline the processes.')" onMouseOver="this.style.cursor='pointer'" border="5">
+				
+				<img src="PortfolioPictures/LogoCSIRO.png" onclick="addLayer(dummyLayer, -34, 138, 4, -54, 120, 'Remote Sensing modeling and fieldwork with the CSIRO Land and Water Remote Sensing group.<br>My work included: Modeling of the underwater light climate and field collection of ground truth measurements for remote assessment of coastal water quality and coral bleaching.<br><a href=https://research.csiro.au/aquatic-sensing/ target=_blank rel=noopener noreferrer>Remote Sensing group website here.</a>')" onMouseOver="this.style.cursor='pointer'" border="5">
+			</p>
+		</article>
+		<article class="text">
+			<div class="clear">
+				<p>I have contributed to the following publications:</p>
+				<p>Van Gessel, S; van Ede, R; Doornenbal, H; ten Veen, J; Hintersberger, E. and the HIKE Team: <b>A European Fault Database as a stepping stone towards improved subsurface evaluation of hazards and resources</b>, EGU General Assembly 2021, online, 19–30 Apr 2021, EGU21-16232, <a href="https://doi.org/10.5194/egusphere-egu21-16232">https://doi.org/10.5194/egusphere-egu21-16232</a>, 2021</p>
+				<p>García Moreno, D; Sanabria Pabón, M. P; Darnault, R; Trench, J; van Ede, R; Hansen, M. Second Report (M35) <b>Wrapping-up the synergies and overlaps highlighted between the projects in terms of geoinformation</b>, GeoERA Information Platform 2021. <a href="https://geoera.eu/wp-content/uploads/2021/05/D2.1.3-Synergies.pdf">https://geoera.eu/wp-content/uploads/2021/05/D2.1.3-Synergies.pdf</a>, 2021</p>
+				<p>Schiegl, M; Diepolder, G. W; Feliachi, A; Hernández Manchado, J. R; Hörfarter, C; Johansson, O; Maul, A.-A; Pantaloni, M; Sőrés, L; and van Ede, R. <b>Semantic harmonization of geoscientific data sets using Linked Data and project specific vocabularies</b>, EGU General Assembly 2020, Online, 4–8 May 2020, EGU2020-9412, <a href="https://doi.org/10.5194/egusphere-egu2020-9412">https://doi.org/10.5194/egusphere-egu2020-9412</a>, 2020</p>
+				<p>Hintersberger, E; Iglseder, Ch; Huet, B; Schiegl, M; van Ede, R; van Gessel, S. <b>The Austrian national fault database and the pan-European HIKE fault database: The interplay of structured data with Linked Data – challenges and opportunities</b>, William Smith Meeting 2021: Geological mapping: of our
+world and others Virtual Conference, <a href="https://www.geolsoc.org.uk/~/media/shared/documents/events/2021/William%20Smith%202021%20Meeting%20-%20Abstract%20Book.pdf">https://www.geolsoc.org.uk/~/media/shared/documents/events/2021/William%20Smith%202021%20Meeting%20-%20Abstract%20Book.pdf</a>, 2021</p>
+				<p>Hintersberger, E; van Ede, R; van Gessel, S. <b>Fault Data Characterization Catalogue</b>, GeoERA HIKE project, <a href="https://geoera.eu/wp-content/uploads/2021/10/D2.1b_HIKE_Fault_Data_Characterization_Catalogue.pdf">https://geoera.eu/wp-content/uploads/2021/10/D2.1b_HIKE_Fault_Data_Characterization_Catalogue.pdf</a>, 2021</p>
+				<p>van Ede, R and the HIKE team, <b>Fault data collected by partners embedded in the European Fault Database</b>, developed in cooperation with GeoERA Information Platform, GeoERA HIKE project, <a href="https://geoera.eu/wp-content/uploads/2021/11/D2.5_HIKE_Fault_DB_Supporting_Document.pdf">https://geoera.eu/wp-content/uploads/2021/11/D2.5_HIKE_Fault_DB_Supporting_Document.pdf</a>, 2021</p>
+				<p>van Gessel, S; Konieczynska, M; van Ede, R; Bobek, K; Larsen, T; Hintersberger, E. <b>HIKE project synthesis Summary of findings and
+recommendations</b>, GeoERA HIKE project, <a href="https://geoera.eu/wp-content/uploads/2021/11/D4.1_HIKE_Synthesis_Report.pdf">https://geoera.eu/wp-content/uploads/2021/11/D4.1_HIKE_Synthesis_Report.pdf</a>, 2021</p>
+				<p>van Ede, R. <b>User manual Fault Database + Knowledge base</b>, GeoERA HIKE project, <a href="https://geoera.eu/wp-content/uploads/2021/10/D5.2b_HIKE_User_Manual.pdf">https://geoera.eu/wp-content/uploads/2021/10/D5.2b_HIKE_User_Manual.pdf</a>, 2021</p>
+				<p>van Heteren, S; van de Ven, T; van Ede, R; Moses, C. <b>The relativity of mapped stable coastlines, EMODnet Open Conference 2021 online event</b>, <a href="https://prod5.assets-cdn.io/event/6627/assets/8376339850-00fad3cccd.pdf">https://prod5.assets-cdn.io/event/6627/assets/8376339850-00fad3cccd.pdf</a>, 2021</p>
+				<p>van Ede, R. <b>FME interface for populating SOS & extension of vocabularies for grainsize measurements</b>, Intergovernmental Oceanographic Commission of UNESCO International Oceanographic Data and Information Exchange, <a href="https://www.iode.org/index.php?option=%20com_oe&task=viewDocumentRecord&docID=17156">https://www.iode.org/index.php?option=%20com_oe&task=viewDocumentRecord&docID=17156</a>, 2016</p>	
+				<p>van Ede, R. <b>SOS Inserter</b>, FME transformer, <a href="https://hub.safe.com/publishers/robvanede/transformers/sosinserter">https://hub.safe.com/publishers/robvanede/transformers/sosinserter</a>, 2016</p>
+				<p>Dekker, A; Brando, Vittorio E; van Ede, R; Daniel, P; Anstee, Janet M; Marks, A; Phinn, S; Roelfsema, C; Scarth, P; Manson, F. <b>Port Curtis and Fitzroy River Estuary Remote Sensing Tasks</b>, Canberra: Coastal CRC; 2005 procite:cf674eaf-e46d-4347-b399-ddcb8390c82b. <a href="http://hdl.handle.net/102.100.100/181889?index=1">http://hdl.handle.net/102.100.100/181889?index=1</a></p>
+			</div>
+		</article>
+		<footer>
+			<p>&#169; 2023 Rob van Ede</p>
+			<p><a href="http://nl.linkedin.com/in/robvanede">
+          <img src="http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Rob van Ede's profile on LinkedIn"></a></p>
+			<p class="contact">(etisbew siht fo eman eht htiw <i><b>emanetissiht</b></i> ecalper) ln.<i><b>emanetissiht</b></i>@tcatnoc :liamE</p>
+          		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />All work on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></p>          
+		</footer>
+	</body>
+</html>

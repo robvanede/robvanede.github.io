@@ -1,0 +1,37 @@
+html{background:#222222;color:#CBCFB4}
+body{background:#222222;font:normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;padding:0;margin:0 auto;width:50em}
+a{background:transparent;text-decoration:none}
+a:hover{color:#000000;border-bottom:1px solid}
+a:link{color:#80836b}
+a:visited{color:#CBCFB4}
+h1 a,h2 a,h3 a{color:inherit !important}
+h1,h2,h3{font-size:medium}
+h1{letter-spacing:0.75em;margin:1.75em 0}
+header{background:#353130;color:#CBCFB4;margin:0;padding:0.3em 0}
+header p{text-align:center;font-size:medium;line-height:0}
+header a{color:#FFFFFF}
+header h1{text-align:center;margin:0}
+footer,.c{text-align:center;clear:both}
+article.photo{background:#353130;padding:0.3em 0}
+article.text{background:#FFFFFF;color:#353130;padding:0.3em 0}
+nav ul{margin:0;padding:1em 1em 0;text-align:center}
+nav li{display:inline;padding-left:1em;padding-right:1em}
+nav li a{border-bottom:none}
+nav li:hover{background:#AB6A6E;color:#000000;border-bottom:none}
+nav li.active{background:#353130;color:#CBCFB4}
+nav li.active a{color:#CBCFB4}
+img{border-color:#353130;margin:0;padding:0}
+img.right{float:right}
+img.left{float:left}
+div.clear{clear:both;margin:5px}
+p.left{text-align:left;margin-left:5px;margin-right:5px}
+p.center{text-align:center;margin-left:5px;margin-right:5px}
+p.right{text-align:right;margin-left:5px;margin-right:5px}
+p.quote{font-style:italic}
+p.intro{color:#000000;font-weight:500}
+p.contact{unicode-bidi:bidi-override;direction:rtl}
+ol{list-style-type: none}
+input{width:25em}
+textarea{width:25em}
+iframe{border:5px solid #353130;margin:0;padding:0}
+.leaflet-container {width: 790px;height: 790px;max-width: 100%;max-height: 100%;}
